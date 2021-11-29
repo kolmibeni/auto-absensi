@@ -37,8 +37,8 @@ def starting_work():
 	return time_in_range(start, end, current)
 
 def getting_off_work():
-	start = datetime.time(17, 10, 0)
-	end   = datetime.time(17, 23, 0)
+	start = datetime.time(18, 20, 0)
+	end   = datetime.time(18, 45, 0)
 	current = datetime.datetime.now().time()
 	return time_in_range(start, end, current)
 

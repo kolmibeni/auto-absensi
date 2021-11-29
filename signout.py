@@ -29,6 +29,12 @@ search_input.send_keys('Auto63906#')
 order_tab = driver.find_element_by_css_selector(
        'button[class=\"btn btn-warning pull-left\"]')
 order_tab.click()
+check_reason = driver.find_element_by_css_selector(
+       'input[value=\"公務於可下班時間(或加班結束時間)即結束，惟未立即簽退離開。\"]')
+check_reason.click()
+submit_button = driver.find_element_by_css_selector(
+       'button[class=\"btn btn-warning pull-left\"]')
+submit_button.click()
 sleep(1)
 
 #for record in checkinList:
